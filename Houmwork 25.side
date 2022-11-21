@@ -1,0 +1,391 @@
+{
+  "id": "c951c193-4665-458e-bb1c-454592c58305",
+  "version": "2.0",
+  "name": "Houmwork",
+  "url": "https://www.tavriav.ua",
+  "tests": [{
+    "id": "abd0637e-c8a3-4447-a376-0b8e4cee6f35",
+    "name": "Авторизація з логіном та паролем",
+    "commands": [{
+      "id": "626adc83-24fc-4dcc-a79a-060679c4a17e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "460f8291-3aed-4f50-8ecf-7f23e12e002c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x717",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab02576c-ce0e-4307-a22c-e098ccda0790",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Увійти",
+      "targets": [
+        ["linkText=Увійти", "linkText"],
+        ["css=.navbar__right > .top-login-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/login/ajax')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac6e2d83-e3e5-4f09-a306-8925549840bf",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//input[@id='username login-username']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8af5ab64-187d-49c4-8a13-6f24d41c3dae",
+      "comment": "",
+      "command": "click",
+      "target": "id=username login-username",
+      "targets": [
+        ["id=username login-username", "id"],
+        ["name=_username", "name"],
+        ["css=#username\\ login-username", "css:finder"],
+        ["xpath=//input[@id='username login-username']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2958f9b6-9c6e-485c-bc86-4d27c1706a31",
+      "comment": "",
+      "command": "type",
+      "target": "name=_username",
+      "targets": [
+        ["id=username login-username", "id"],
+        ["name=_username", "name"],
+        ["css=#username\\ login-username", "css:finder"],
+        ["xpath=//input[@id='username login-username']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "+38(067)559-33-11"
+    }, {
+      "id": "6d8f28f9-4599-477b-a094-dfca7f1b52c8",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//input[@id='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca48bd75-e6e6-4b51-94a3-ef97a8cde314",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["id=password", "id"],
+        ["name=_password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db0d409e-bed7-4087-977a-47ac23edd103",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=_password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Gyrchak1801"
+    }, {
+      "id": "5ec3e2cb-f8e0-4aaf-8295-a11af2291611",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=_submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37ee40ea-e9b2-4971-a13f-a86e150ca972",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\_submit",
+      "targets": [
+        ["id=_submit", "id"],
+        ["name=_submit", "name"],
+        ["css=#\\_submit", "css:finder"],
+        ["xpath=//input[@id='_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b9ae60-7ab9-49f9-ad7e-5dd47707d36a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.products__slider > h3",
+      "targets": [
+        ["css=.products__slider > h3", "css:finder"],
+        ["xpath=//div[@id='content']/div/main/div/div/div[5]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Акційні товари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "25b0f2e6-596e-4d08-9cd7-73be778ec87c",
+    "name": "Авторизація через електронну пошту",
+    "commands": [{
+      "id": "a97304a3-2d2c-44c4-b7bd-e5e4ff0a800f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a21c2664-9fc3-4968-9b69-078f6088541f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x717",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e21537b-8af5-4f23-80f7-ca690907163c",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.navbar__right > .top-login-link",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "557d2388-912e-40e6-b060-8dd481894e73",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Увійти",
+      "targets": [
+        ["linkText=Увійти", "linkText"],
+        ["css=.navbar__right > .top-login-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/login/ajax')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c80762f-9d39-4b13-96ee-b18a21c3819c",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=_password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2969c108-e8cf-4ec8-9c11-20fa2ef5dfec",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=_password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-login-form']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Gyrchak1801"
+    }, {
+      "id": "3f31317e-6f8a-42a3-a9c0-8be6aa53c2a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.google > .social-name",
+      "targets": [
+        ["css=.google > .social-name", "css:finder"],
+        ["xpath=//div[@id='pjax-container-login']/div/div[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Продовжити з Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f2a5bac-1b7a-4999-9789-30ab9149eb0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=политикой конфиденциальности",
+      "targets": [
+        ["linkText=политикой конфиденциальности", "linkText"],
+        ["css=.PrDSKc > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'политикой конфиденциальности')]", "xpath:link"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/span/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tavriav.ua')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'политикой конфиденциальности')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3800b60-ab6f-4850-9f36-c8e9dfbc748d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.JDAKTe:nth-child(1) .wLBAL",
+      "targets": [
+        ["css=.JDAKTe:nth-child(1) .wLBAL", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "63421489-96bd-4620-a5c3-c7f2d97063f1",
+    "name": "Знайти товар через пошук, додати у кошик",
+    "commands": [{
+      "id": "6e39d9d8-5ca6-4983-b4fd-ea37d29a7216",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76648224-2f9a-4174-ac43-e2402afff036",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x717",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b4c45a3-9904-4b37-90f0-3a8716a98f24",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//input[@id='productItems']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d701d317-da84-49d1-a63d-429925adafcd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='productItems']",
+      "targets": [
+        ["id=productItems", "id"],
+        ["css=#productItems", "css:finder"],
+        ["xpath=//input[@id='productItems']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-search']/input", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2716236d-d9f7-4441-93ce-03ae3f415997",
+      "comment": "",
+      "command": "type",
+      "target": "id=productItems",
+      "targets": [
+        ["id=productItems", "id"],
+        ["css=#productItems", "css:finder"],
+        ["xpath=//input[@id='productItems']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-search']/input", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "борошно"
+    }, {
+      "id": "970b3559-db77-4d5d-9aa7-7902acb65558",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=productItems",
+      "targets": [
+        ["id=productItems", "id"],
+        ["css=#productItems", "css:finder"],
+        ["xpath=//input[@id='productItems']", "xpath:attributes"],
+        ["xpath=//form[@id='ajax-search']/input", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a26d6c42-683a-46a4-8de7-0533e3122136",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\38 416 img",
+      "targets": [
+        ["css=#\\38 416 img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://static.tavriav.ua/resize_150x150/f/e/8/7/fe878bf4a0c3cd37839452a24b1f031df9c97b6a_1270329_photo_main.png')]", "xpath:img"],
+        ["xpath=//div[@id='8416']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[7]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "368f2d60-8c1b-45b3-8f7c-3478dd58e4c1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='8416']/div",
+      "targets": [
+        ["css=#\\38 416 > .add-to-cart__btn-text", "css:finder"],
+        ["xpath=//div[@id='8416']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63c791be-24ed-4a68-8a7b-a8ad0b12d72e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb7b210d-ea52-4dc0-aee6-b560a0d64dbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar__right .cart__counter-icon",
+      "targets": [
+        ["css=.navbar__right .cart__counter-icon", "css:finder"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1f76385-2fcd-452e-a2b9-b623562a01c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show #product-id-8416 .item-description__title",
+      "targets": [
+        ["css=.show #product-id-8416 .item-description__title", "css:finder"],
+        ["xpath=//div[@id='product-id-8416']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Борошно Сто пудов 500 г...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efc743f5-fb1d-4eb9-932a-1c7c51ba8052",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar__right #product-id-8416 .quantity__change:nth-child(3)",
+      "targets": [
+        ["css=.navbar__right #product-id-8416 .quantity__change:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='product-id-8416']/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6d6ccf-f8ef-4b52-b4c3-491c1dbffb77",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.navbar__right #product-id-8416 .quantity__change:nth-child(3)",
+      "targets": [
+        ["css=.navbar__right #product-id-8416 .quantity__change:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='product-id-8416']/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec48991-7891-4b0c-9f1a-420ed1a17c51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8f2d4d07-0d71-44c6-80e4-4c70e3d5585b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["abd0637e-c8a3-4447-a376-0b8e4cee6f35"]
+  }],
+  "urls": ["https://www.tavriav.ua/"],
+  "plugins": []
+}
